@@ -1,0 +1,186 @@
+:root {
+    --font-input-size: 0.75rem;
+    --font-placeholder-size: 1.25rem;
+    --font-label-size: 0.85rem;
+    --font-header: 2.5rem;
+    --font-color-primary: #ffffff;
+    --font-color-secondary: #919191;
+    --font-label-color: #c7c4c4;
+    --font-color-btn: #020333;
+    --secondary-color: #fa2162;
+    --border-rad: 0.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    background-image: url(/assets/images/background-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.svg-top {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+}
+
+.svg-bottom {
+    position: absolute;
+    left: 0;
+    bottom: -5rem;
+}
+
+.svg-lines {
+    position: absolute;
+    width: 100%;
+    top: -50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, 0);
+}
+
+.svg-circles {
+    position: absolute;
+    right: 15rem;
+    bottom: 4rem;
+}
+
+.svg img {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.formCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    z-index: 999;
+    padding: 2rem;
+}
+
+.formCon .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.formCon .logo img {
+    display: flex;
+}
+
+.formCon div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0.5rem 0;
+    color: var(--font-color-secondary);
+}
+
+.formCon .input label {
+    margin: 0.5rem 0;
+    font-size: var(--font-label-size);
+    color: var(--font-label-color);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.header p {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-header);
+    color: var(--font-color-primary);
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.formCon .headerSub {
+    color: var(--font-color-secondary);
+    font-size: 0.75rem;
+}
+
+.formCon .avatar {
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.formCon .avatar label {
+    color: var(--font-color-secondary);
+}
+
+.formCon .avatar .avatarCon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 8rem;
+    border-style: dashed;
+    border-color: var(--font-color-secondary);
+    border-radius: var(--border-rad);
+}
+
+.formCon .input {
+    width: 50%;
+    align-items: flex-start;
+}
+
+.formCon .input input {
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    border: 1px solid var(--font-color-secondary);
+    outline: 1px solid var(--font-color-secondary);
+    background-color: rgb(255, 255, 255, 0.1);
+    color: var(--font-color-primary);
+    font-size: var(--font-input-size);
+    border-radius: var(--border-rad);
+    padding: 0.25rem;
+}
+
+.generateCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.generateCon button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    color: var(--font-color-btn);
+    background-color: var(--secondary-color);
+    width: 100%;
+}
